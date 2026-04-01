@@ -5,7 +5,7 @@ const seunghyeon: PersonEntry = {
   group: "ms",
   order: 2,
   name: "Seunghyun Kim",
-  role: "Efficient Vision Encoder 📸",
+  role: "Efficient VLM 📸",
   bio: "M.S. @ POSTECH EE (24.09--).",
   avatar: seunghyeonPhoto,
   status: "M.S.",
