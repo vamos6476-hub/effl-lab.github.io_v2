@@ -25,9 +25,11 @@ const joinPaths = getJoinUsItems();
               <div class="text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary">
                 {item.title}
               </div>
-              <p class="text-sm leading-relaxed text-muted-foreground">
-                {item.description}
-              </p>
+              {item.description && (
+                <p class="text-sm leading-relaxed text-muted-foreground">
+                  {item.description}
+                </p>
+              )}
             </div>
           </a>
         ))

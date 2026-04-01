@@ -1,0 +1,27 @@
+---
+import EditPageLink from "@/components/layout/EditPageLink.astro";
+import Layout from "@/layouts/Layout.astro";
+import ProgramContent from "@/data/people/internship-program.md";
+---
+
+<Layout
+  title="Internship Program"
+  description="Details about the internship program at EffL."
+>
+  <div class="animate-in fade-in mx-auto max-w-3xl p-8 duration-700 md:p-16">
+    <div class="prose max-w-none dark:prose-invert">
+      <ProgramContent />
+    </div>
+
+    <div class="mt-10">
+      <a
+        href="/join-us/interns"
+        class="text-sm font-medium text-primary hover:underline"
+      >
+        Back to Join Us
+      </a>
+    </div>
+
+    <EditPageLink />
+  </div>
+</Layout>

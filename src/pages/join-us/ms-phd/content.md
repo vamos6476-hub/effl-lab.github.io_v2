@@ -1,4 +1,4 @@
-Please email Jaeho with your
+Please email [Jaeho](mailto:jaeho.lee@postech.ac.kr) with your
 
 - Transcript (with rank)
 - CV/Résumé

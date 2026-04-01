@@ -21,6 +21,13 @@ function createTreeUrl(repoPath: string) {
   return `${baseUrl}/tree/${branch}/${normalizedPath}`;
 }
 
+function createEditUrl(repoPath: string) {
+  const normalizedPath = repoPath.replace(/^\/+|\/+$/g, "");
+  const { baseUrl, branch } = getRepositoryBaseUrl();
+
+  return `${baseUrl}/edit/${branch}/${normalizedPath}`;
+}
+
 export function getEditTarget(pathname: string): EditTarget | null {
   const normalizedPath =
     pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
@@ -41,8 +48,8 @@ export function getEditTarget(pathname: string): EditTarget | null {
 
   if (normalizedPath === "/research") {
     return {
-      href: createTreeUrl("src/pages/research"),
-      repoPath: "src/pages/research",
+      href: createEditUrl("src/pages/research/01-content.md"),
+      repoPath: "src/pages/research/01-content.md",
     };
   }
 
@@ -74,6 +81,13 @@ export function getEditTarget(pathname: string): EditTarget | null {
     };
   }
 
+  if (normalizedPath === "/join-us/interns/program") {
+    return {
+      href: createEditUrl("src/data/people/internship-program.md"),
+      repoPath: "src/data/people/internship-program.md",
+    };
+  }
+
   if (normalizedPath === "/join-us") {
     return {
       href: createTreeUrl("src/pages/join-us"),
@@ -85,10 +99,10 @@ export function getEditTarget(pathname: string): EditTarget | null {
 
   if (joinUsMatch) {
     const slug = joinUsMatch[1];
-    const repoPath = `src/pages/join-us/${slug}`;
+    const repoPath = `src/pages/join-us/${slug}/content.md`;
 
     return {
-      href: createTreeUrl(repoPath),
+      href: createEditUrl(repoPath),
       repoPath,
     };
   }
