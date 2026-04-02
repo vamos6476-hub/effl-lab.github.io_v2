@@ -1,5 +1,5 @@
 import type { AlumniEntry } from "./_types.mts";
-import avatar from "../photo/juyun.jpg";
+import avatar from "./photo/juyun.jpg";
 
 const juyun: AlumniEntry = {
   order: 2,

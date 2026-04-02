@@ -3,14 +3,13 @@ import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
 import { Icon } from "astro-icon/components";
-import type { AlumniEntry } from "./alumni/_types.mts";
+import type { AlumniEntry } from "./_types.mts";
 
 // Add person files in `src/pages/people/alumni/*.mts`.
 // Each file should export a default `AlumniEntry`.
-const alumniModules = import.meta.glob<{ default?: AlumniEntry }>(
-  "./alumni/*.mts",
-  { eager: true },
-);
+const alumniModules = import.meta.glob<{ default?: AlumniEntry }>("./*.mts", {
+  eager: true,
+});
 
 const alumni = Object.values(alumniModules)
   .flatMap((module, index) => {

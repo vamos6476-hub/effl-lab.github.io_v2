@@ -19,7 +19,7 @@
  */
 
 :root {
-  /* --- Light Mode: Sage Mist --- */
+  /* --- Sage Mist --- */
   --background: oklch(0.98 0.008 165);
   --foreground: oklch(0.25 0.02 165);
 
@@ -39,29 +39,6 @@
   --callout-warning: oklch(0.7 0.15 85);
   --callout-danger: oklch(0.62 0.18 28);
   --callout-success: oklch(0.6 0.14 160);
-}
-
-.dark {
-  /* --- Dark Mode: Deep Moss --- */
-  --background: oklch(0.14 0.02 165);
-  --foreground: oklch(0.965 0.008 165);
-
-  --card: oklch(0.235 0.03 162);
-  --card-foreground: oklch(0.95 0.01 165);
-
-  --primary: oklch(0.8 0.14 160);
-  --primary-foreground: oklch(0.14 0.025 165);
-
-  --muted: oklch(0.2 0.022 162);
-  --muted-foreground: oklch(0.84 0.012 165);
-
-  --border: oklch(0.33 0.02 162);
-  --shadow-main: 0 30px 60px -15px oklch(0 0 0 / 0.5);
-
-  --callout-info: oklch(0.75 0.12 250);
-  --callout-warning: oklch(0.8 0.15 85);
-  --callout-danger: oklch(0.75 0.18 28);
-  --callout-success: oklch(0.72 0.14 160);
 }
 
 @theme inline {

@@ -2,10 +2,10 @@
 import Layout from "@/layouts/Layout.astro";
 import NewsTimeline from "@/components/blocks/NewsTimeline.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
-import type { PastNewsSection } from "./news/_types.mts";
+import type { PastNewsSection } from "./_types.mts";
 
 const pastNewsModules = import.meta.glob<{ default?: PastNewsSection[] }>(
-  "./news/past/*.mts",
+  "./past/*.mts",
   { eager: true },
 );
 

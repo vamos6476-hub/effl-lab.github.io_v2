@@ -2,14 +2,13 @@
 import Layout from "@/layouts/Layout.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
 import { Icon } from "astro-icon/components";
-import type { InternEntry } from "./interns/_types.mts";
+import type { InternEntry } from "./_types.mts";
 
 // Add person files in `src/pages/people/interns/*.mts`.
 // Each file should export a default `InternEntry`.
-const internModules = import.meta.glob<{ default?: InternEntry }>(
-  "./interns/*.mts",
-  { eager: true },
-);
+const internModules = import.meta.glob<{ default?: InternEntry }>("./*.mts", {
+  eager: true,
+});
 
 const interns = Object.values(internModules)
   .flatMap((module, index) => {

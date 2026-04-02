@@ -3,12 +3,12 @@ import Layout from "@/layouts/Layout.astro";
 import PersonCard from "@/components/people/PersonCard.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
 import { Icon } from "astro-icon/components";
-import type { PersonEntry, PersonGroup } from "./people/_types.mts";
+import type { PersonEntry, PersonGroup } from "./members/_types.mts";
 
-// Add person files in `src/pages/people/*.mts`.
+// Add person files in `src/pages/people/members/*.mts`.
 // Each file should export a default `PersonEntry`.
 const peopleModules = import.meta.glob<{ default?: PersonEntry }>(
-  "./people/*.mts",
+  "./members/*.mts",
   { eager: true },
 );
 
@@ -23,7 +23,7 @@ const people = Object.values(peopleModules)
   .flatMap((module, index) => {
     const path = Object.keys(peopleModules)[index] ?? "";
 
-    if (path.endsWith("/example.mts")) {
+    if (path.endsWith("/example.mts") || path.endsWith("/_types.mts")) {
       return [];
     }
 

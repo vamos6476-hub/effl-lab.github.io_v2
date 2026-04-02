@@ -6,7 +6,7 @@ interface MarkdownModule {
   default: unknown;
 }
 
-const researchModules = import.meta.glob<MarkdownModule>("./research/*.md", {
+const researchModules = import.meta.glob<MarkdownModule>("./*.md", {
   eager: true,
 });
 
@@ -27,7 +27,7 @@ const researchSections = Object.entries(researchModules)
         class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.08),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent)] opacity-90"
       >
       </div>
-      <div class="relative prose max-w-none dark:prose-invert">
+      <div class="relative prose max-w-none">
         {researchSections.map((Section) => <Section />)}
       </div>
     </div>

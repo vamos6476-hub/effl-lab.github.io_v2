@@ -5,14 +5,14 @@ import EditPageLink from "@/components/layout/EditPageLink.astro";
 import Layout from "@/layouts/Layout.astro";
 import site from "@/config/site";
 import { Icon } from "astro-icon/components";
-import type { NewsEntry } from "./home/news/_types.mts";
+import type { NewsEntry } from "./news/_types.mts";
 
 const mainNewsModules = import.meta.glob<{ default?: NewsEntry[] }>(
-  "./home/news/main/*.mts",
+  "./news/main/*.mts",
   { eager: true },
 );
 const moreNewsModules = import.meta.glob<{ default?: NewsEntry[] }>(
-  "./home/news/more/*.mts",
+  "./news/more/*.mts",
   { eager: true },
 );
 

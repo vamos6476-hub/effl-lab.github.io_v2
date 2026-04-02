@@ -1,8 +1,8 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
-import type { JoinUsEntry } from "./_types.mts";
-import { getJoinUsContent, getJoinUsItems } from "./_data.mts";
+import type { JoinUsEntry } from "../_types.mts";
+import { getJoinUsContent, getJoinUsItems } from "../_data.mts";
 
 interface Props {
   item: JoinUsEntry;
@@ -39,7 +39,7 @@ const pageDescription = "How to join EffL.";
       <h2 class="text-3xl font-bold tracking-tight">{item.title}</h2>
     </header>
 
-    <div class="prose dark:prose-invert">
+    <div class="prose">
       <Content />
     </div>
 

@@ -2,10 +2,10 @@
 import Layout from "@/layouts/Layout.astro";
 import EditPageLink from "@/components/layout/EditPageLink.astro";
 import { Icon } from "astro-icon/components";
-import type { PaperEntry, PaperResource } from "./publications/_types.mts";
+import type { PaperEntry, PaperResource } from "./_types.mts";
 
 const paperModules = import.meta.glob<{ default: PaperEntry }>(
-  "./publications/**/*.paper.mts",
+  "./**/*.paper.mts",
   { eager: true },
 );
 
@@ -110,7 +110,7 @@ function resolveSectionPapers(folder: string) {
     .filter(([path, module]) => {
       if (!module?.default) return false;
 
-      return path.startsWith(`./publications/${folder}/`);
+      return path.startsWith(`./${folder}/`);
     })
     .sort(([pathA], [pathB]) => pathA.localeCompare(pathB))
     .map(([, module]) => module.default);

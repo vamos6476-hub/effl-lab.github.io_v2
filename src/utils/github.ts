@@ -62,8 +62,8 @@ export function getEditTarget(pathname: string): EditTarget | null {
 
   if (normalizedPath === "/people") {
     return {
-      href: createTreeUrl("src/pages/people"),
-      repoPath: "src/pages/people",
+      href: createTreeUrl("src/pages/people/members"),
+      repoPath: "src/pages/people/members",
     };
   }
 

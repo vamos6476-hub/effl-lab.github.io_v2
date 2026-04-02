@@ -1,7 +1,6 @@
 ---
 import site from "@/config/site";
 import Nav from "./Nav.astro";
-import ThemeToggle from "./ThemeToggle.astro";
 import { Icon } from "astro-icon/components";
 import Brand from "./Brand.astro";
 ---
@@ -14,7 +13,7 @@ import Brand from "./Brand.astro";
 
   <Nav />
 
-  <div class="mt-6 flex items-center justify-between md:mt-10">
+  <div class="mt-6 flex items-center md:mt-10">
     <div class="flex gap-4 text-muted-foreground/60">
       {
         site.social.map((item) => (
@@ -28,7 +27,5 @@ import Brand from "./Brand.astro";
         ))
       }
     </div>
-
-    <ThemeToggle />
   </div>
 </aside>

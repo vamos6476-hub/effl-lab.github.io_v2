@@ -4,10 +4,10 @@ import type { AlumniEntry } from "./_types.mts";
 // 1. 이 파일을 복사해서 같은 폴더에 새 파일로 만들어 주세요.
 // 2. 파일 이름을 `name.mts`처럼 바꿔 주세요.
 // 3. 아래 내용을 수정하면 `alumni.astro`에서 자동으로 불러옵니다.
-// 4. 사진을 쓰려면 `../photo/파일명.jpg`를 import해서 `avatar`에 넣으면 됩니다.
+// 4. 사진을 쓰려면 `./photo/파일명.jpg`를 import해서 `avatar`에 넣으면 됩니다.
 
 // 예시:
-// import avatar from "../photo/example.jpg";
+// import avatar from "./photo/example.jpg";
 
 const exampleAlumni: AlumniEntry = {
   // 표시 순서
