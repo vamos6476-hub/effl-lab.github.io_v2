@@ -3,6 +3,7 @@ import type { PaperEntry } from "../_types.mts";
 const paper: PaperEntry = {
   title:
     "Scalable Neural Video Representations with Learnable Positional Features",
+  link: "https://openreview.net/forum?id=OxfI-3i5M8g",
   authors: ["Subin Kim", "Sihyun Yu", "Jaeho Lee", "Jinwoo Shin"],
   venue: "NeurIPS 2022",
   year: "2022",

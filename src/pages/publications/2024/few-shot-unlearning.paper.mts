@@ -2,6 +2,7 @@ import type { PaperEntry } from "../_types.mts";
 
 const paper: PaperEntry = {
   title: "Few-shot Unlearning",
+  link: "https://arxiv.org/abs/2205.15567",
   authors: [
     "Youngsik Yoon",
     "Jinhwan Nam",

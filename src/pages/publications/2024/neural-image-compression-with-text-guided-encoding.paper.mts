@@ -3,6 +3,7 @@ import type { PaperEntry } from "../_types.mts";
 const paper: PaperEntry = {
   title:
     "Neural Image Compression with Text-guided Encoding for both Pixel-level and Perceptual Fidelity",
+  link: "https://arxiv.org/abs/2403.02944",
   authors: [
     "Hagyeong Lee*",
     "Minkyu Kim*",

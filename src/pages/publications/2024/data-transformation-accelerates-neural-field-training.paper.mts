@@ -3,6 +3,7 @@ import type { PaperEntry } from "../_types.mts";
 const paper: PaperEntry = {
   title:
     "In Search of a Data Transformation that Accelerates Neural Field Training",
+  link: "https://arxiv.org/abs/2311.17094",
   authors: ["Junwon Seo*", "Sangyoon Lee*", "Kwang In Kim", "Jaeho Lee"],
   venue: "CVPR 2024 Oral (top 0.78%) (NeurIPS 2023 ATTRIB Workshop)",
   year: "2024",

@@ -2,6 +2,7 @@ import type { PaperEntry } from "../_types.mts";
 
 const paper: PaperEntry = {
   title: "Discovering and Mitigating Visual Biases through Keyword Explanation",
+  link: "https://arxiv.org/abs/2301.11104",
   authors: [
     "Younghyun Kim*",
     "Sangwoo Mo*",

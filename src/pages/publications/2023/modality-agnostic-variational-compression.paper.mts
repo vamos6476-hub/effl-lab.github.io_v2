@@ -3,6 +3,7 @@ import type { PaperEntry } from "../_types.mts";
 const paper: PaperEntry = {
   title:
     "Modality-Agnostic Variational Compression of Implicit Neural Representations",
+  link: "https://openreview.net/forum?id=bBXCCSoVQZ",
   authors: [
     "Jonathan R. Schwarz",
     "Jihoon Tack",

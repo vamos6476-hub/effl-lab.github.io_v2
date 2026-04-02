@@ -2,6 +2,7 @@ import type { PaperEntry } from "../_types.mts";
 
 const paper: PaperEntry = {
   title: "MASKER: Masked Keyword Regularization for Reliable Text Generation",
+  link: "https://ojs.aaai.org/index.php/AAAI/article/view/17601",
   authors: [
     "Seung Jun Moon",
     "Sangwoo Mo",

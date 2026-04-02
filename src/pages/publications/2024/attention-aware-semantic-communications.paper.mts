@@ -2,6 +2,7 @@ import type { PaperEntry } from "../_types.mts";
 
 const paper: PaperEntry = {
   title: "Attention-aware Semantic Communications for Collaborative Inference",
+  link: "https://arxiv.org/abs/2404.07217",
   authors: [
     "Jiwoong Im*",
     "Nayoung Kwon*",
