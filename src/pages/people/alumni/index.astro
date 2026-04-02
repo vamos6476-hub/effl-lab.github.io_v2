@@ -116,6 +116,8 @@ function getLinkIcon(label: string, href: string) {
                   {person.links.map((link) => (
                     <a
                       href={link.href}
+                      aria-label={link.label}
+                      title={link.label}
                       target={
                         link.href.startsWith("mailto:") ? undefined : "_blank"
                       }
@@ -124,13 +126,12 @@ function getLinkIcon(label: string, href: string) {
                           ? undefined
                           : "noopener noreferrer"
                       }
-                      class="inline-flex items-center gap-1.5 rounded-lg border border-border/55 bg-background/70 px-3 py-2 text-[11px] font-medium text-foreground/75 transition-colors hover:border-primary/35 hover:text-primary"
+                      class="flex h-9 w-9 items-center justify-center rounded-lg border border-border/55 bg-background/70 text-foreground/75 transition-colors hover:border-primary/35 hover:text-primary"
                     >
                       <Icon
                         name={getLinkIcon(link.label, link.href)}
-                        class="h-3.5 w-3.5 shrink-0"
+                        class="h-4 w-4 shrink-0"
                       />
-                      <span>{link.label}</span>
                     </a>
                   ))}
                 </div>

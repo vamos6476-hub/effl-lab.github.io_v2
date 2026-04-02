@@ -6,7 +6,7 @@ const currentPath = Astro.url.pathname;
 ---
 
 <nav
-  class="no-scrollbar flex flex-1 flex-wrap gap-3 overflow-x-auto max-md:justify-start md:flex-col md:gap-3 md:overflow-x-visible"
+  class="no-scrollbar flex flex-1 flex-nowrap justify-center gap-3 overflow-x-auto md:flex-col md:justify-start md:gap-3 md:overflow-x-visible"
 >
   {
     site.navigation.map((item) => {
@@ -17,13 +17,13 @@ const currentPath = Astro.url.pathname;
         <a
           href={item.href}
           class:list={[
-            "group flex min-w-24 items-center justify-start rounded-2xl border border-transparent px-3 py-2.5 text-left transition-all md:min-w-0 md:justify-between md:py-3",
+            "group flex min-w-24 items-center justify-center rounded-2xl border border-transparent px-3 py-2.5 text-center transition-all md:min-w-0 md:justify-between md:py-3 md:text-left",
             isActive
               ? "border-primary/20 bg-primary/10 md:hover:border-primary/20 md:hover:bg-primary/15"
               : "hover:bg-muted/50",
           ]}
         >
-          <div class="flex flex-col">
+          <div class="flex flex-col items-center text-center md:items-start md:text-left">
             <span
               class:list={[
                 "text-sm font-bold",

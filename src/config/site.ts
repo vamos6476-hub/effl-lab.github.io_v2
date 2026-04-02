@@ -21,7 +21,6 @@ const site = {
   // --- Navigation ---
   // subtitle: decorative label shown below the name (uppercase, small text)
   navigation: [
-    { name: "Home", href: "/home" },
     { name: "Research", href: "/research" },
     { name: "Publications", href: "/publications" },
     { name: "People", href: "/people" },

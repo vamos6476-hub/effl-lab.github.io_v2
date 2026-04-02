@@ -13,7 +13,7 @@ const minkyu: AlumniEntry = {
     { label: "Webpage", href: "https://minguinho26.github.io" },
     { label: "Mail", href: "mailto:minkyu.kim@postech.ac.kr" },
     { label: "Blog", href: "https://velog.io/@minkyu4506/posts" },
-    { label: "Recent project", href: "https://taco-nic.github.io" },
+    { label: "Project", href: "https://taco-nic.github.io" },
     { label: "X", href: "https://x.com/minguinho_zeze" },
   ],
 };
