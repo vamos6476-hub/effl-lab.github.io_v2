@@ -8,12 +8,12 @@ const homeHero: HomeHero = {
     {
       icon: "mdi:school-outline",
       label: "Affiliated with",
-      value: "POSTECH EE/GSAI",
+      value: "POSTECH EE & AI",
     },
     {
       icon: "mdi:flask-outline",
       label: "Focusing on",
-      value: "theories, algorithms, and systems to make ML more efficient.",
+      value: "theories and algorithms to make ML more efficient",
     },
   ],
 };
