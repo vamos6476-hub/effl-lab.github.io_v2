@@ -5,11 +5,11 @@ const hyeonjun: PersonEntry = {
   group: "phd",
   order: 7,
   name: "Hyeonjun Kim",
-  role: "Learning Vision Language Models with Many Applications 🤖",
-  bio: "M.S.+Ph.D. @ POSTECH AI (25.02--).",
+  role: "Image Compression For Vision-Language-Action Models 🤖",
+  bio: "A highly self-motivated researcher investigating how to integrate different modalities.",
   avatar: hyeonjunPhoto,
   status: "M.S.+Ph.D.",
-  tags: ["Multimodal Learning", "Model Efficiency", "Vision-Language-Action"],
+  tags: ["Multimodal Learning", "Model Efficiency", "Vision-Language-Action Model"],
   links: [
     {
       label: "Mail",
