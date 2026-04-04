@@ -1,8 +1,10 @@
-Our long-term goal is to make AI more responsible--accessible, sustainable, and righteous.
+We prove theorems and design algorithms for machine learning.
 
-As the first step, we focus on various facets of **Efficient ML**, which helps us make AI equally accessible to everyone.
+# Goals
 
-In particular, we work on three dimensions:
+Our long-term goal is to make AI more **responsible** --- accessible, sustainable, and righteous.
+
+As the first step, we focus on various facets of **Efficient AI**, which helps us make AI equally accessible to everyone. In particular, we work on three dimensions:
 
 ## Inference
 
