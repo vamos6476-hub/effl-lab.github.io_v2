@@ -1,33 +1,16 @@
-We prove theorems and design algorithms for machine learning.
+### What we do
 
-# Goals
+We focus on various facets of **Efficient AI** to make AI equally accessible to everyone. In particular, we are interested in achieving the favorable tradeoffs in terms of:
+- Model accuracy
+- Inference cost
+- Training cost
 
-Our long-term goal is to make AI more **responsible** --- accessible, sustainable, and righteous.
+### How we approach
 
-As the first step, we focus on various facets of **Efficient AI**, which helps us make AI equally accessible to everyone. In particular, we work on three dimensions:
+We pursue this goal through identifying, understanding and harnessing the ***algorithmic biases*** of machine learning. Modern machine learning algorithms tend to be biased toward finding a very specific solution, instead of simply finding any solution which fits the training dataset well. Luckily, it turns out that we can steer ML algorithms in a way that the learned solution generalize well. However, it often comes at the cost of more expensive training or inference.
 
-## Inference
+Through theories, we seek to characterize such tradeoffs; through algorithms, we seek to achieve Pareto-optimal points on the tradeoff curve.
 
-We develop fast, low-resource methods to serve massive multimodal AI, e.g.,
-
-- Model Compression
-- Parallel Decoding
-- Batch Scheduling
-
-## Training
-
-We resolve the compute / memory bottlenecks for training large-scale models, e.g.,
-
-- Meta-Learning
-- Model Merging
-- Parameter-Efficient Fine-Tuning
-
-## Data Dimension
-
-We design algorithms to handle data with extremely high dimensionality, e.g.,
-
-- Data Compression
-- High-res Video Processing
-- Time-Series Forecasting
+---
 
 See our [papers](/publications) for more.
