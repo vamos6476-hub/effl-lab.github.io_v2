@@ -5,11 +5,11 @@ const minhee: PersonEntry = {
   group: "ms",
   order: 3,
   name: "Minhee Lee",
-  role: "Video Understanding 🎥",
-  bio: "M.S. @ POSTECH AI (25.02--).",
+  role: "Understanding Prompt Ignoring in mmDiT 🎨",
+  bio: "Aiming to enhance performance by tackling fundamental causes.",
   avatar: minheePhoto,
   status: "M.S.",
-  tags: ["Diffusion Transformers", "Diffusion Language Models"],
+  tags: ["Diffusion Transformers", "multi-modal DiT", "Representation"],
   links: [
     {
       label: "Webpage",
