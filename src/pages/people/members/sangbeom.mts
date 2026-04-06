@@ -6,7 +6,7 @@ const sangbeom: PersonEntry = {
   order: 8,
   name: "Sangbeom Ha",
   role: "Efficient Vision-Language-Action Models for Robotic Intelligence 🤖",
-  bio: "M.S.+Ph.D. @ POSTECH EE (26.02--).",
+  bio: "Bridge mathematical optimization and EE principles to architect ultra-efficient Physical AI",
   avatar: sangbeomPhoto,
   status: "M.S.+Ph.D.",
   tags: ["Vision-Language-Action", "Model Efficiency", "On-device Robotics"],
